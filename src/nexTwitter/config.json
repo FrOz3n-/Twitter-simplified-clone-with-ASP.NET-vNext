@@ -1,11 +1,11 @@
 {
     "Data": {
         "DefaultConnection": { 
-            "ConnectionString": "Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=todo_app;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False"
+            "ConnectionString": "Data Source=FROZ3N-PC;Initial Catalog=nexTwitter;Integrated Security=True"
         }
     },
     "EntityFramework": {
-        "ApplicationDbContext": {
+        "SqlDbContext": {
             "ConnectionString": "Data:DefaultConnection:ConnectionString"
         }
     }
