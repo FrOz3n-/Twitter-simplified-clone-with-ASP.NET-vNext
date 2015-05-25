@@ -61,8 +61,6 @@ namespace nexTwitter
                     template: "{controller}/{action}/{id?}",
                     defaults: new { controller = "Home", action = "Index" });
             });
-
-            app.UseIdentity();
         }
         
     }
