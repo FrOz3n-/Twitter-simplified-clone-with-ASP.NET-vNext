@@ -2,7 +2,6 @@
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
-using nexTwitter.Models;
 using Microsoft.AspNet.Hosting;
 using nexTwitter.Infrastructure.Data;
 using Microsoft.Data.Entity;
@@ -10,6 +9,7 @@ using nexTwitter.Domain.IRepositories;
 using nexTwitter.Infrastructure.Data.Repositories;
 using nexTwitter.Business.ApplicationServices.Services;
 using nexTwitter.Business.ApplicationServices.Services.Implementation;
+using nexTwitter.Business.ApplicationServices;
 
 namespace nexTwitter
 {
@@ -21,6 +21,7 @@ namespace nexTwitter
             Configuration = new Configuration()
                 .AddJsonFile("config.json")
                 .AddEnvironmentVariables();
+            Mappings.DefineMappings();
         }
 
         public IConfiguration Configuration { get; set; }
@@ -40,12 +41,8 @@ namespace nexTwitter
                    options.UseSqlServer(Configuration.Get("Data:DefaultConnection:ConnectionString"));
                });
 
-
-            // bind repositories DI
-            services.AddSingleton<ICommonRepository, CommonRepository>();
-
-            // bind services DI
             services.AddSingleton<IUserService, UserService>();
+            services.AddSingleton<ICommonRepository, CommonRepository>();
 
         }
 
@@ -64,6 +61,9 @@ namespace nexTwitter
                     template: "{controller}/{action}/{id?}",
                     defaults: new { controller = "Home", action = "Index" });
             });
+
+            app.UseIdentity();
         }
+        
     }
 }

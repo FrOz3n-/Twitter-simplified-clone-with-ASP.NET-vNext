@@ -13,7 +13,6 @@ namespace nexTwitter.Business.ApplicationServices
         public static void DefineMappings()
         {
             Mapper.CreateMap<User, UserDTO>();
-            
         }
     }
 }

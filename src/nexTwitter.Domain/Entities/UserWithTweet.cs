@@ -9,6 +9,5 @@ namespace nexTwitter.Domain.Entities
 
 		public virtual User User { get; set; }
 		public virtual Tweet Tweet { get; set; }
-
 	}
 }

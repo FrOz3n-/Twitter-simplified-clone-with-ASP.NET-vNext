@@ -1,7 +1,7 @@
 {
     "Data": {
         "DefaultConnection": { 
-            "ConnectionString": "Data Source=FROZ3N-PC;Initial Catalog=nexTwitter;Integrated Security=True"
+            "ConnectionString": "Data Source=FROZ3N-PC;Initial Catalog=nexTwitter;Integrated Security=True;"
         }
     },
     "EntityFramework": {

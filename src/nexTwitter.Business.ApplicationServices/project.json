@@ -7,9 +7,9 @@
     "licenseUrl": "",
 
     "dependencies": {
-        "nexTwitter.Entities": "1.0.0-*",
+        "nexTwitter.Domain": "1.0.0-*",
         "nexTwitter.Infrastructure": "1.0.0-*",
-        "nexTwitter.Data.SqlServer": "1.0.0-*",
+        "nexTwitter.Infrastructure.Data": "1.0.0-*",
         "AutoMapper": "4.0.0-ci1054"
 
     },

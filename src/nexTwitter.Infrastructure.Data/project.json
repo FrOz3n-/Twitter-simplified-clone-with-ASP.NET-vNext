@@ -1,0 +1,33 @@
+{
+    "version": "1.0.0-*",
+    "description": "",
+    "authors": [ "" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "EntityFramework.Commands": "7.0.0-beta4",
+        "EntityFramework.Core": "7.0.0-beta4",
+        "nexTwitter.Domain": "1.0.0-*",
+        "nexTwitter.Infrastructure": "1.0.0-*"
+    },
+
+    "commands": {
+        "ef": "EntityFramework.Commands"
+    },
+
+    "frameworks": {
+        "dnx451": { },
+        "dnxcore50": {
+            "dependencies": {
+                "Microsoft.CSharp": "4.0.0-beta-22816",
+                "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
+                "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
+                "System.Collections": "4.0.10-beta-22816",
+                "System.Linq": "4.0.0-beta-22816",
+                "System.Threading": "4.0.10-beta-22816"
+            }
+        }
+    }
+}

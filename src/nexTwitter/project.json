@@ -22,16 +22,15 @@
         "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
         "Microsoft.Framework.Logging": "1.0.0-beta4",
         "Microsoft.Framework.Logging.Console": "1.0.0-beta4",
-        "nexTwitter.Data.SqlServer": "1.0.0-*",
-        "nexTwitter.Entities": "1.0.0-*",
-        "nexTwitter.Infrastructure": "1.0.0-*",
-        "nexTwitter.Business.ApplicationServices": "1.0.0-*"
+        "nexTwitter.Business.ApplicationServices": "1.0.0-*",
+        "nexTwitter.Infrastructure.Data": "1.0.0-*",
+        "nexTwitter.Domain": "1.0.0-*",
+        "nexTwitter.Infrastructure": "1.0.0-*"
     },
 
     "commands": {
         "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
-        "gen": "Microsoft.Framework.CodeGeneration",
-        "ef": "EntityFramework.Commands"
+        "gen": "Microsoft.Framework.CodeGeneration"
     },
 
     "frameworks": {
